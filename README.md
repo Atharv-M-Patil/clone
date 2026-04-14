@@ -1,16 +1,117 @@
-# React + Vite
+# 🛒 Amazon Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A pixel-perfect frontend clone of the [Amazon](https://www.amazon.com) e-commerce website, built with **React** and **Vite**. This project replicates Amazon's iconic UI — including the navigation bar, hero banner, product category grid, and footer — as a hands-on learning exercise.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖼️ Preview
 
-## React Compiler
+> A faithful recreation of Amazon's homepage featuring the navbar, hero section, product category boxes, and footer.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Responsive Navbar** — Amazon logo, delivery location, search bar with category selector, account/sign-in, returns & orders, and shopping cart icon
+- **Navigation Panel** — Secondary menu bar with links to Bestsellers, Today's Deals, Mobiles, Prime, Customer Service, and more
+- **Hero Banner** — Full-width background image with a region-redirect message (amazon.com → amazon.in)
+- **Product Category Grid** — 8 product category cards:
+  - 👗 Clothes
+  - 💊 Health Care
+  - 🛋️ Furniture
+  - 💻 Electronics
+  - 💄 Makeup
+  - 🐾 Petcare
+  - ✈️ Flight Tickets
+  - 👟 Fashion
+- **Footer** — Multi-column links (Careers, Blog, About Amazon, etc.) and copyright notice
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| [React 19](https://react.dev/) | UI component library |
+| [Vite (rolldown-vite)](https://vite.dev/) | Lightning-fast build tool & dev server |
+| [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react-swc) | Fast Refresh via SWC |
+| [Font Awesome](https://fontawesome.com/) | Icons (cart, location, search, bars) |
+| CSS | Custom styles mimicking Amazon's design |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) v18 or higher
+- npm (comes with Node.js)
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Atharv-M-Patil/clone.git
+cd clone
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
+npm run dev
+```
+
+Open your browser and navigate to `http://localhost:5173`.
+
+---
+
+## 📜 Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start the local development server with HMR |
+| `npm run build` | Create a production-ready build in `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint to check for code issues |
+
+---
+
+## 📁 Project Structure
+
+```
+amazon-clone/
+├── public/                 # Static assets
+├── src/
+│   ├── assets/             # Images (logo, hero, category boxes)
+│   ├── components/
+│   │   ├── Navbar.jsx      # Top navigation bar + panel
+│   │   ├── Hero.jsx        # Hero banner section
+│   │   ├── BoxGrid.jsx     # Product category cards grid
+│   │   └── Footer.jsx      # Site footer
+│   ├── App.jsx             # Root component
+│   ├── main.jsx            # React entry point
+│   └── style.css           # Global styles
+├── index.html
+├── vite.config.js
+├── eslint.config.js
+└── package.json
+```
+
+---
+
+## 📌 Note
+
+This project is built **purely for educational purposes** to practice React component architecture, CSS styling, and Vite tooling. It is **not affiliated with or endorsed by Amazon**.
+
+---
+
+## 👤 Author
+
+**Atharv M Patil**
+- GitHub: [@Atharv-M-Patil](https://github.com/Atharv-M-Patil)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
